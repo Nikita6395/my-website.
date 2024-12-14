@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Еко-Клуб</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            background-color: #f4f9f4;
+            color: #333;
+        }
+        h1, h2 {
+            color: #2e7d32;
+        }
+        section {
+            margin-bottom: 20px;
+            padding: 15px;
+            background-color: #ffffff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+        .gallery img {
+            width: 100%;
+            max-width: 300px;
+            margin: 10px 0;
+            border-radius: 8px;
+        }
+        ul {
+            list-style: circle inside;
+            padding-left: 20px;
+        }
+        form {
+            background-color: #e8f5e9;
+            padding: 15px;
+            border-radius: 8px;
+            max-width: 400px;
+        }
+        form label {
+            display: block;
+            margin-top: 10px;
+        }
+        form input, form textarea, form button {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        form button {
+            background-color: #2e7d32;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        form button:hover {
+            background-color: #1b5e20;
+        }
+        a {
+            color: #2e7d32;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <h1>Ласкаво просимо до Еко-Клубу!</h1>
+    <p>Це сайт нашого шкільного клубу, присвячений екологічним ініціативам та заходам.</p>
+
+    <!-- Секція з фото -->
+    <section class="gallery">
+        <h2>Наші події</h2>
+        <img src="https://adau.edu.az/images/news/2021-02/1613209024_59138350_2269157343177208_8230876859357724672_o.jpg" alt="Фото події 1">
+        <img src="https://adau.edu.az/images/news/2021-02/1613209080_58442087_2269157533177189_7964440495885647872_o.jpg" alt="Фото події 2">
+    </section>
+
+    <!-- Список напрямків діяльності -->
+    <section>
+        <h2>Наші напрямки діяльності</h2>
+        <ul>
+            <li>Організація прибирань у парках та на вулицях.</li>
+            <li>Висадка дерев та зелених насаджень.</li>
+            <li>Популяризація сортування сміття.</li>
+            <li>Проведення освітніх семінарів щодо екології.</li>
+        </ul>
+    </section>
+
+    <!-- Контактна форма -->
+    <section>
+        <h2>Зв'яжіться з нами</h2>
+        <form action="#" method="post">
+            <label for="name">Ваше ім'я:</label>
+            <input type="text" id="name" name="name" placeholder="Введіть ваше ім'я" required>
+
+            <label for="email">Ваш Email:</label>
+            <input type="email" id="email" name="email" placeholder="Введіть ваш Email" required>
+
+            <label for="message">Ваше повідомлення:</label>
+            <textarea id="message" name="message" rows="5" placeholder="Напишіть ваше повідомлення" required></textarea>
+
+            <button type="submit">Надіслати</button>
+        </form>
+    </section>
+
+    <p>Залишайтеся на зв'язку з нами: <a href="mailto:eco.club@example.com">eco.club@example.com</a></p>
+</body>
+</html>
